@@ -22,9 +22,9 @@ Add the plug to the `:before` pipeline in your router.ex:
 defmodule Djay.Router do
   use Phoenix.Router
 
-  pipeline :before do
+  pipeline :browser do
+    ...
     plug TrailingFormatPlug
-    plug :super
   end
 end
 ```
